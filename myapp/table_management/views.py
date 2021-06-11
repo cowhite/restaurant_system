@@ -4,6 +4,7 @@ from myapp.decorator import json_required,form_required, query_params_required
 import uuid
 from myapp.utils.utils import myresponse
 
+@json_required(required_keys=["seat_count", "is_available"])
 def add_table():
     request_data = request.json
     seat_count = request_data['seat_count']

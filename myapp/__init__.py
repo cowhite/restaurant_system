@@ -25,7 +25,7 @@ from myapp import menu_management, orders_management, table_management
 #from myapp.API.v1 import accounts
 
 menu_management.Initialize(app)
-'''orders_management.Initialize(app)'''
+orders_management.Initialize(app)
 table_management.Initialize(app)
 
 def add_cors_headers(response):
